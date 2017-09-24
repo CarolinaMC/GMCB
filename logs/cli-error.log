@@ -1,0 +1,100 @@
+2017-09-23 06:27:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.personas' doesn't exist in C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'personas', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('personas', Array)
+#2 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('personas')
+#3 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(295): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(422): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(397): Bake\Shell\Task\TemplateTask->getContent('index')
+#7 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(146): Bake\Shell\Task\TemplateTask->bake('index', true)
+#8 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(508): Bake\Shell\Task\TemplateTask->main('Personas', 'index')
+#9 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\xampp\htdocs\prueba3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2017-09-23 06:28:50 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.personas' doesn't exist in C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'personas', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('personas', Array)
+#2 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('personas')
+#3 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(295): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(422): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(397): Bake\Shell\Task\TemplateTask->getContent('index')
+#7 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(146): Bake\Shell\Task\TemplateTask->bake('index', true)
+#8 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(508): Bake\Shell\Task\TemplateTask->main('Personas', 'index')
+#9 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\xampp\htdocs\prueba3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2017-09-23 06:30:20 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.personas' doesn't exist in C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'personas', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('personas', Array)
+#2 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('personas')
+#3 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(295): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(422): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(397): Bake\Shell\Task\TemplateTask->getContent('index')
+#7 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(146): Bake\Shell\Task\TemplateTask->bake('index', true)
+#8 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(508): Bake\Shell\Task\TemplateTask->main('Personas', 'index')
+#9 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\xampp\htdocs\prueba3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2017-09-23 06:30:32 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.personas' doesn't exist in C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'personas', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('personas', Array)
+#2 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('personas')
+#3 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(295): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(149): Bake\Shell\Task\TemplateTask->_loadController()
+#6 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(508): Bake\Shell\Task\TemplateTask->main('Personas')
+#7 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#9 C:\xampp\htdocs\prueba3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#10 {main}
+
+
+2017-09-23 16:49:54 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.personas' doesn't exist in C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'personas', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('personas', Array)
+#2 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('personas')
+#3 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'personas', 'Personas')
+#7 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Personas')
+#8 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(508): Bake\Shell\Task\ModelTask->main('Personas')
+#9 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\xampp\htdocs\prueba3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2017-09-23 16:53:11 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.personas' doesn't exist in C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'personas', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('personas', Array)
+#2 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('personas')
+#3 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'personas', 'Personas')
+#7 C:\xampp\htdocs\prueba3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Personas')
+#8 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(508): Bake\Shell\Task\ModelTask->main('Personas')
+#9 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\Shell.php(501): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 C:\xampp\htdocs\prueba3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#11 C:\xampp\htdocs\prueba3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
