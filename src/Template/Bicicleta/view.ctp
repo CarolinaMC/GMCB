@@ -6,11 +6,11 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Bicicletum'), ['action' => 'edit', $bicicletum->serial]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Bicicletum'), ['action' => 'delete', $bicicletum->serial], ['confirm' => __('Are you sure you want to delete # {0}?', $bicicletum->serial)]) ?> </li>
-        <li><?= $this->Html->link(__('List Bicicleta'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Bicicletum'), ['action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Opciones Bicicleta') ?></li>
+        <li><?= $this->Html->link(__('Editar Bicicleta'), ['action' => 'edit', $bicicletum->serial]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar Bicicleta'), ['action' => 'delete', $bicicletum->serial], ['confirm' => __('Are you sure you want to delete # {0}?', $bicicletum->serial)]) ?> </li>
+        <li><?= $this->Html->link(__('Lista Bicicleta'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Nueva Bicicleta'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="bicicleta view large-9 medium-8 columns content">

@@ -6,7 +6,7 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Opciones Bicicleta') ?></li>
         <li><?= $this->Html->link(__('Nueva Bicicleta'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
@@ -32,9 +32,9 @@
                 <td><?= h($bicicletum->tamaño) ?></td>
                 <td><?= h($bicicletum->Cliente_cedula) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $bicicletum->serial]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $bicicletum->serial]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $bicicletum->serial], ['confirm' => __('Are you sure you want to delete # {0}?', $bicicletum->serial)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $bicicletum->serial]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $bicicletum->serial]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $bicicletum->serial], ['confirm' => __('Estas seguro que quieres borrar esta bicicleta # {0}?', $bicicletum->serial)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
