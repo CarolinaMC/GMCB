@@ -2,7 +2,8 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
-
+use Cake\Auth\DefaultPasswordHasher;
+use Cake\Auth\AbstractPasswordHasher;
 /**
  * Usuario Entity
  *
@@ -42,8 +43,14 @@ class Usuario extends Entity
      * Fields that are excluded from JSON versions of the entity.
      *
      * @var array
-     */
+     
     protected $_hidden = [
         'password'
-    ];
+    ];*/
+
+    protected function _setPassword($value){
+        $hasher = new DefaultPasswordHasher();
+        return $hasher->hash($value);
+
+    }
 }
