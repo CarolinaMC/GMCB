@@ -32,7 +32,7 @@ class BicicletaTable extends Table
 
         $this->setTable('bicicleta');
         $this->setDisplayField('serial');
-        $this->setPrimaryKey(['serial', 'Cliente_cedula']);
+        $this->setPrimaryKey(['serial']);
         $this->belongsTo('Cliente',['foreingKey'=>'Cliente_cedula','joinType'=>'INNER']);
     }
 

@@ -81,11 +81,17 @@ class UsuarioController extends AppController
         if ($this->request->is('post')) {
             $usuario = $this->Usuario->patchEntity($usuario, $this->request->getData());
             if ($this->Usuario->save($usuario)) {
-                $this->Flash->success(__('The usuario has been saved.'));
+                $this->Flash->success(__('El usuario se guardo correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The usuario could not be saved. Please, try again.'));
+             else{
+                if(sizeof($usuario)>0)
+                    $this->Flash->error(__('Este numero de cedula ya existe.'));
+                else{
+                    $this->Flash->error(__('El usuario no pudo ser guardado. Intente de nuevo.'));
+                    }
+            }
         }
         $this->set(compact('usuario'));
         $this->set('_serialize', ['usuario']);
@@ -106,11 +112,11 @@ class UsuarioController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $usuario = $this->Usuario->patchEntity($usuario, $this->request->getData());
             if ($this->Usuario->save($usuario)) {
-                $this->Flash->success(__('The usuario has been saved.'));
+                $this->Flash->success(__('El usuario se actualizó correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The usuario could not be saved. Please, try again.'));
+            $this->Flash->error(__('El usuario no pudo ser actualizado. Intente de nuevo.'));
         }
         $this->set(compact('usuario'));
         $this->set('_serialize', ['usuario']);
@@ -128,9 +134,9 @@ class UsuarioController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $usuario = $this->Usuario->get($id);
         if ($this->Usuario->delete($usuario)) {
-            $this->Flash->success(__('The usuario has been deleted.'));
+            $this->Flash->success(__('El usuario se eliminó correctamente.'));
         } else {
-            $this->Flash->error(__('The usuario could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El usuario no pudo ser eliminado. Intente de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);

@@ -88,11 +88,11 @@ class ClienteController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $cliente = $this->Cliente->patchEntity($cliente, $this->request->getData());
             if ($this->Cliente->save($cliente)) {
-                $this->Flash->success(__('The cliente has been saved.'));
+                $this->Flash->success(__('El cliente se actualizó correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The cliente could not be saved. Please, try again.'));
+            $this->Flash->error(__('El cliente no pudo ser actualizado. Intente de nuevo.'));
         }
         $this->set(compact('cliente'));
         $this->set('_serialize', ['cliente']);
@@ -110,9 +110,9 @@ class ClienteController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $cliente = $this->Cliente->get($id);
         if ($this->Cliente->delete($cliente)) {
-            $this->Flash->success(__('The cliente has been deleted.'));
+            $this->Flash->success(__('El cliente se ha eliminado.'));
         } else {
-            $this->Flash->error(__('The cliente could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El cliente no pudo ser eliminado. Intente de nuevo.'));
         }
 
         return $this->redirect(['action' => 'index']);
