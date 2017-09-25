@@ -18,6 +18,9 @@ class ClienteController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+
+    var $paginate = array('limit'=>5,'order'=>array('cedula'));
+    
     public function index()
     {
         $cliente = $this->paginate($this->Cliente);

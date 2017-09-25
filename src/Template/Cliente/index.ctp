@@ -6,8 +6,8 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Cliente'), ['action' => 'add']) ?></li>
+        <li class="heading"><?= __('Opciones Cliente') ?></li>
+        <li><?= $this->Html->link(__('Nuevo Cliente'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="cliente index large-9 medium-8 columns content">
@@ -20,7 +20,7 @@
                 <th scope="col"><?= $this->Paginator->sort('apellidos') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('telefono') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('direccion') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col" class="actions"><?= __('Opciones') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -32,9 +32,9 @@
                 <td><?= h($cliente->telefono) ?></td>
                 <td><?= h($cliente->direccion) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $cliente->cedula]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $cliente->cedula]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $cliente->cedula], ['confirm' => __('Are you sure you want to delete # {0}?', $cliente->cedula)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $cliente->cedula]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $cliente->cedula]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $cliente->cedula], ['confirm' => __('Estas seguro que quieres borrar este Cliente # {0}?', $cliente->cedula)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -42,12 +42,12 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->first('<< ' . __('primero')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
+            <?= $this->Paginator->next(__('siguiente') . ' >') ?>
+            <?= $this->Paginator->last(__('ultimo') . ' >>') ?>
         </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+        <p><?= $this->Paginator->counter(['format' => __('Pagina {{page}} de {{pages}}, muestra {{current}} registro(s) tiene {{count}} total')]) ?></p>
     </div>
 </div>

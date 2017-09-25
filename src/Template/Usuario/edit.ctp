@@ -3,32 +3,35 @@
  * @var \App\View\AppView $this
  */
 ?>
+
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Opciones Usuario') ?></li>
         <li><?= $this->Form->postLink(
-                __('Delete'),
+                __('Borrar'),
                 ['action' => 'delete', $usuario->cedula],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $usuario->cedula)]
+                ['confirm' => __('Estas seguro que quieres borrar este Usuario # {0}?', $usuario->nombre)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Usuario'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Lista Usuarios'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="usuario form large-9 medium-8 columns content">
     <?= $this->Form->create($usuario) ?>
     <fieldset>
-        <legend><?= __('Edit Usuario') ?></legend>
+        <legend><?= __('Editar Usuario') ?></legend>
         <?php
             echo $this->Form->control('nombre');
             echo $this->Form->control('apellidos');
-            echo $this->Form->control('puesto');
+            $puestos =  array('Administrador','Dependiente','Mecanico');
+            echo $this->form->input('puesto', array('type'=>'select','options'=>$puestos));
             echo $this->Form->control('email');
             echo $this->Form->control('username');
             echo $this->Form->control('password');
             echo $this->Form->control('telefono');
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('Editar')) ?>
     <?= $this->Form->end() ?>
 </div>

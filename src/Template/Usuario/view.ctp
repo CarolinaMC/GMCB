@@ -4,13 +4,26 @@
  * @var \App\Model\Entity\Usuario $usuario
  */
 ?>
+
+<?php function puesto($puesto){
+    if($puesto==0){
+        return 'Administrador';
+    }
+    elseif ($puesto==1) {
+        return 'Dependiente';
+    }
+    else{
+        return 'Mecanico';
+    }
+}
+?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Usuario'), ['action' => 'edit', $usuario->cedula]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Usuario'), ['action' => 'delete', $usuario->cedula], ['confirm' => __('Are you sure you want to delete # {0}?', $usuario->cedula)]) ?> </li>
-        <li><?= $this->Html->link(__('List Usuario'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Usuario'), ['action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Opciones Usuario') ?></li>
+        <li><?= $this->Html->link(__('Editar Usuario'), ['action' => 'edit', $usuario->cedula]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar Usuario'), ['action' => 'delete', $usuario->cedula], ['confirm' => __('Estas seguro que quieres borrar este Usuario # {0}?', $usuario->nombre)]) ?> </li>
+        <li><?= $this->Html->link(__('Lista Usuarios'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Nuevo Usuario'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="usuario view large-9 medium-8 columns content">
@@ -30,7 +43,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Puesto') ?></th>
-            <td><?= h($usuario->puesto) ?></td>
+            <td><?= h(puesto($usuario->puesto)) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Email') ?></th>

@@ -39,6 +39,8 @@ class UsuarioController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+    var $paginate = array('limit'=>5,'order'=>array('cedula'));
+    
     public function index()
     {
         $usuario = $this->paginate($this->Usuario);
