@@ -37,6 +37,7 @@ class UsuarioController extends AppController
     public function home(){
         $this->render();
     }
+
     /**
      * Index method
      *

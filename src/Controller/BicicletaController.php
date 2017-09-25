@@ -57,11 +57,11 @@ class BicicletaController extends AppController
         if ($this->request->is('post')) {
             $bicicletum = $this->Bicicleta->patchEntity($bicicletum, $this->request->getData());
             if ($this->Bicicleta->save($bicicletum)) {
-                $this->Flash->success(__('The bicicletum has been saved.'));
+                $this->Flash->success(__('La Bicicleta ha sido guardada'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The bicicletum could not be saved. Please, try again.'));
+            $this->Flash->error(__('No se guardó la Bicicleta. Intente nuevamente'));
         }
         $cliente_cedula = $this->Bicicleta->Cliente->find('all',array('fields'=>array('cedula')));
         $this->set(compact('cliente_cedula'));

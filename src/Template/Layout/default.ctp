@@ -42,9 +42,18 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                 <li>
-                    <?= $this->Html->link('Salir',['contrller'=>'Usuario', 'action'=> 'logout'])?>
+                    <?= $this->Html->link("Usuario",['controller'=>'Usuario', 'action'=>'index'])?>
+                </li>
+                <li>
+                    <?= $this->Html->link("Bicicleta", ['controller'=>'Bicicleta', 'action'=>'index'])?>
+                </li>
+                <li>
+                    <?= $this->Html->link("Cliente", ['controller'=>'Cliente', 'action'=>'index'])?>
+                </li>
+                
+                <li>
+                    <?= $this->Html->link('Salir',['controller'=>'Usuario', 'action'=> 'logout'])?>
                 </li>
             </ul>
         </div>
