@@ -30,6 +30,9 @@ class UsuarioController extends AppController
 
     }
 
+    public function logout(){
+        return $this->redirect($this->Auth->logout());
+    }
 
     public function home(){
         $this->render();
