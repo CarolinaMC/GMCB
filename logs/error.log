@@ -476,3 +476,174 @@ Stack Trace:
 #2 {main}
 
 
+2017-09-24 16:17:36 Error: [Cake\Controller\Exception\MissingActionException] Action UsuarioController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsuarioController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /Usuario/login
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuarioController))
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-24 16:31:38 Error: [Cake\Controller\Exception\MissingActionException] Action UsuarioController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsuarioController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /usuario/login?redirect=%2FUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuarioController))
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-24 16:47:24 Error: [Error] Call to undefined method Cake\Controller\Component\AuthComponent::identity() in C:\xampp\htdocs\gmcb\src\Controller\UsuarioController.php on line 19
+Request URL: /usuario/login?redirect=%2FUsuario
+Referer URL: http://localhost:7070/gmcb/usuario/login?redirect=%2FUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsuarioController->login()
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuarioController))
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-09-24 16:55:09 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.users' doesn't exist
+Request URL: /usuario/login?redirect=%2FUsuario
+Referer URL: http://localhost:7070/gmcb/usuario/login?redirect=%2FUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('users')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1576): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1178): Cake\ORM\Table->query()
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(169): Cake\ORM\Table->find('all', Array)
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('demc099')
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('demc099', 'mariamora')
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\gmcb\src\Controller\UsuarioController.php(19): Cake\Controller\Component\AuthComponent->identify()
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsuarioController->login()
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuarioController))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#28 {main}
+
+
+2017-09-24 16:57:49 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, null given, called in C:\xampp\htdocs\gmcb\src\Controller\UsuarioController.php on line 19 in C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php on line 2499
+Request URL: /usuario/login?redirect=%2FUsuario
+Referer URL: http://localhost:7070/gmcb/usuario/login?redirect=%2FUsuario
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\src\Controller\UsuarioController.php(19): Cake\ORM\Table->patchEntity(NULL, Array)
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsuarioController->login()
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuarioController))
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-09-25 00:18:17 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'baseciclo.usuario' doesn't exist
+Request URL: /usuario/login?redirect=%2FUsuario%2Flogin
+Referer URL: http://localhost:7070/gmcb/usuario/login?redirect=%2FUsuario%2Flogin
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'usuario', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('usuario', Array)
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('usuario')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsuarioTable))
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1576): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsuarioTable))
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1178): Cake\ORM\Table->query()
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(169): Cake\ORM\Table->find('all', Array)
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('demc099')
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('demc099', 'mariamora')
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\gmcb\src\Controller\UsuarioController.php(19): Cake\Controller\Component\AuthComponent->identify()
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsuarioController->login()
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuarioController))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#28 {main}
+
+

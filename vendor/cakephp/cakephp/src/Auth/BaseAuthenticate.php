@@ -32,7 +32,7 @@ abstract class BaseAuthenticate implements EventListenerInterface
      * Default config for this object.
      *
      * - `fields` The fields to use to identify a user by.
-     * - `userModel` The alias for users table, defaults to Users.
+     * - `userModel` The alias for usuario table, defaults to usuario.
      * - `finder` The finder method to use to fetch user record. Defaults to 'all'.
      *   You can set finder name as string or an array where key is finder name and value
      *   is an array passed to `Table::find()` options.
@@ -47,10 +47,10 @@ abstract class BaseAuthenticate implements EventListenerInterface
      */
     protected $_defaultConfig = [
         'fields' => [
-            'username' => 'username',
+            'username' => 'cedula',
             'password' => 'password'
         ],
-        'userModel' => 'Users',
+        'userModel' => 'Usuario',
         'scope' => [],
         'finder' => 'all',
         'contain' => null,

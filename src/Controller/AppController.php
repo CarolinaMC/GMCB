@@ -28,6 +28,8 @@ use Cake\Event\Event;
 class AppController extends Controller
 {
 
+
+
     /**
      * Initialization hook method.
      *
@@ -43,7 +45,30 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-
+        $this->loadComponent('Auth',[
+                'authorize'=>['Controller'],
+                'authenticate'=>[
+                    'Form'=>[
+                        'fiels'=>[
+                            'email'=>'email',
+                            'password'=>'password'
+                        ]
+                    ]
+                ],
+                'loginAction'=>[
+                    'controller'=> 'Usuario',
+                    'action'=>'login'
+                ],
+                'authError'=>'Ingrese sus Datos',
+                'loginRedirect'=>[
+                    'controller'=>'Usuario',
+                    'action'=>'home'
+                ],
+                'logoutRedirect'=>[
+                    'controller'=>'Usuario',
+                    'action'=>'login'
+                ]
+            ]);
         /*
          * Enable the following components for recommended CakePHP security settings.
          * see https://book.cakephp.org/3.0/en/controllers/components/security.html
@@ -68,5 +93,10 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+    }
+
+    public function isAuthorized($usuario){
+        return true;
+
     }
 }
