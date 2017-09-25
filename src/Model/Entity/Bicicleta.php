@@ -27,6 +27,7 @@ class Bicicletum extends Entity
     protected $_accessible = [
         'marca' => true,
         'descripcion' => true,
-        'tamaño' => true
+        'tamaño' => true,
+        'Cliente_cedula' => true
     ];
 }

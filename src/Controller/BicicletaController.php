@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
+
 /**
  * Bicicleta Controller
  *
@@ -18,9 +19,11 @@ class BicicletaController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+    var $paginate = array('limit' =>5,'order'=> array('marca'));
     public function index()
     {
         $bicicleta = $this->paginate($this->Bicicleta);
+
 
         $this->set(compact('bicicleta'));
         $this->set('_serialize', ['bicicleta']);
@@ -60,6 +63,8 @@ class BicicletaController extends AppController
             }
             $this->Flash->error(__('The bicicletum could not be saved. Please, try again.'));
         }
+        $cliente_cedula = $this->Bicicleta->Cliente->find('all',array('fields'=>array('cedula')));
+        $this->set(compact('cliente_cedula'));
         $this->set(compact('bicicletum'));
         $this->set('_serialize', ['bicicletum']);
     }

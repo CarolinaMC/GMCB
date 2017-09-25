@@ -33,6 +33,7 @@ class BicicletaTable extends Table
         $this->setTable('bicicleta');
         $this->setDisplayField('serial');
         $this->setPrimaryKey(['serial', 'Cliente_cedula']);
+        $this->belongsTo('Cliente',['foreingKey'=>'Cliente_cedula','joinType'=>'INNER']);
     }
 
     /**
@@ -65,7 +66,8 @@ class BicicletaTable extends Table
 
         $validator
             ->scalar('Cliente_cedula')
-            ->allowEmpty('Cliente_cedula', 'create');
+            ->requirePresence('Cliente_cedula', 'create')
+            ->notEmpty('Cliente_cedula');
 
         return $validator;
     }

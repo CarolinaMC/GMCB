@@ -38,7 +38,7 @@
                 <td><?= h($usuario->password) ?></td>
                 <td><?= h($usuario->telefono) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $usuario->cedula]) ?>
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $usuario->cedula],['class'=>'btn btn-primary']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $usuario->cedula]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $usuario->cedula], ['confirm' => __('Are you sure you want to delete # {0}?', $usuario->cedula)]) ?>
                 </td>

@@ -17,6 +17,8 @@
             echo $this->Form->control('marca');
             echo $this->Form->control('descripcion');
             echo $this->Form->control('tamaño');
+            echo $this->Form->control('Cliente_cedula',array('type'=>'select','options'=>$cliente_cedula));
+            
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
