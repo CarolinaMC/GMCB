@@ -60,9 +60,11 @@ class ClienteTable extends Table
             ->notEmpty('apellidos');
 
         $validator
-            ->scalar('telefono')
-            ->requirePresence('telefono', 'create')
-            ->notEmpty('telefono');
+            ->integer('telefono')
+            ->allowEmpty('telefono', 'create')
+             ->add('telefono', 'RulesChecker',['message' => 'Se permiten solo números']);
+            //->notEmpty('telefono');
+            //->message('hola');
 
         $validator
             ->scalar('direccion')

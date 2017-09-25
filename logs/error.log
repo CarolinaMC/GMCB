@@ -1831,3 +1831,390 @@ Stack Trace:
 #15 {main}
 
 
+2017-09-25 16:57:41 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR) in C:\xampp\htdocs\gmcb\src\Model\Table\ClienteTable.php on line 66
+Request URL: /cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Cl...', 'App')
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(238): Cake\Core\App::className('Cliente', 'Model/Table', 'Table')
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Cliente', Array)
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Cliente')
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(359): Cake\Controller\Controller->loadModel('Cliente')
+#9 C:\xampp\htdocs\gmcb\src\Controller\ClienteController.php(56): Cake\Controller\Controller->__get('Cliente')
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClienteController->add()
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-09-25 16:58:31 Error: [Error] Call to undefined method Cake\Validation\Validator::com_message_pump() in C:\xampp\htdocs\gmcb\src\Model\Table\ClienteTable.php on line 66
+Request URL: /cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(172): App\Model\Table\ClienteTable->validationDefault(Object(Cake\Validation\Validator))
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(145): Cake\ORM\Table->createValidator('default')
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(471): Cake\ORM\Table->getValidator('default')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(414): Cake\View\Form\EntityContext->_getValidator(Array)
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1386): Cake\View\Form\EntityContext->isRequired('cedula')
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1285): Cake\View\Helper\FormHelper->_magicOptions('cedula', Array, true)
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1107): Cake\View\Helper\FormHelper->_parseOptions('cedula', Array)
+#7 C:\xampp\htdocs\gmcb\src\Template\Cliente\add.ctp(17): Cake\View\Helper\FormHelper->control('cedula')
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(624): Cake\View\View->render(NULL, NULL)
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-09-25 16:58:52 Error: [Error] Call to undefined method Cake\Validation\Validator::message() in C:\xampp\htdocs\gmcb\src\Model\Table\ClienteTable.php on line 66
+Request URL: /cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(172): App\Model\Table\ClienteTable->validationDefault(Object(Cake\Validation\Validator))
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(145): Cake\ORM\Table->createValidator('default')
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(471): Cake\ORM\Table->getValidator('default')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(414): Cake\View\Form\EntityContext->_getValidator(Array)
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1386): Cake\View\Form\EntityContext->isRequired('cedula')
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1285): Cake\View\Helper\FormHelper->_magicOptions('cedula', Array, true)
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1107): Cake\View\Helper\FormHelper->_parseOptions('cedula', Array)
+#7 C:\xampp\htdocs\gmcb\src\Template\Cliente\add.ctp(17): Cake\View\Helper\FormHelper->control('cedula')
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(624): Cake\View\View->render(NULL, NULL)
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-09-25 16:58:55 Error: [Error] Call to undefined method Cake\Validation\Validator::message() in C:\xampp\htdocs\gmcb\src\Model\Table\ClienteTable.php on line 66
+Request URL: /cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(172): App\Model\Table\ClienteTable->validationDefault(Object(Cake\Validation\Validator))
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(145): Cake\ORM\Table->createValidator('default')
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(471): Cake\ORM\Table->getValidator('default')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(414): Cake\View\Form\EntityContext->_getValidator(Array)
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1386): Cake\View\Form\EntityContext->isRequired('cedula')
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1285): Cake\View\Helper\FormHelper->_magicOptions('cedula', Array, true)
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1107): Cake\View\Helper\FormHelper->_parseOptions('cedula', Array)
+#7 C:\xampp\htdocs\gmcb\src\Template\Cliente\add.ctp(17): Cake\View\Helper\FormHelper->control('cedula')
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(624): Cake\View\View->render(NULL, NULL)
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2017-09-25 17:02:50 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR) in C:\xampp\htdocs\gmcb\src\Model\Table\ClienteTable.php on line 66
+Request URL: /cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Cl...', 'App')
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(238): Cake\Core\App::className('Cliente', 'Model/Table', 'Table')
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Cliente', Array)
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Cliente')
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(359): Cake\Controller\Controller->loadModel('Cliente')
+#9 C:\xampp\htdocs\gmcb\src\Controller\ClienteController.php(56): Cake\Controller\Controller->__get('Cliente')
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClienteController->add()
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-09-25 17:03:23 Error: [TypeError] Argument 1 passed to Cake\Validation\ValidationRule::__construct() must be of the type array, string given, called in C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidationSet.php on line 126 in C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidationRule.php on line 78
+Request URL: /cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidationSet.php(126): Cake\Validation\ValidationRule->__construct('numeric')
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(396): Cake\Validation\ValidationSet->add('rule', 'numeric')
+#2 C:\xampp\htdocs\gmcb\src\Model\Table\ClienteTable.php(65): Cake\Validation\Validator->add(Object(Cake\Validation\ValidationSet), 'rule')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(172): App\Model\Table\ClienteTable->validationDefault(Object(Cake\Validation\Validator))
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(145): Cake\ORM\Table->createValidator('default')
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(471): Cake\ORM\Table->getValidator('default')
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(414): Cake\View\Form\EntityContext->_getValidator(Array)
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1386): Cake\View\Form\EntityContext->isRequired('cedula')
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1285): Cake\View\Helper\FormHelper->_magicOptions('cedula', Array, true)
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1107): Cake\View\Helper\FormHelper->_parseOptions('cedula', Array)
+#10 C:\xampp\htdocs\gmcb\src\Template\Cliente\add.ctp(17): Cake\View\Helper\FormHelper->control('cedula')
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(624): Cake\View\View->render(NULL, NULL)
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#30 {main}
+
+
+2017-09-25 17:07:23 Error: [TypeError] Argument 1 passed to Cake\Validation\ValidationRule::__construct() must be of the type array, string given, called in C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidationSet.php on line 126 in C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidationRule.php on line 78
+Request URL: /cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidationSet.php(126): Cake\Validation\ValidationRule->__construct('numeric')
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(396): Cake\Validation\ValidationSet->add('rule', 'numeric')
+#2 C:\xampp\htdocs\gmcb\src\Model\Table\ClienteTable.php(65): Cake\Validation\Validator->add(Object(Cake\Validation\ValidationSet), 'rule')
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(172): App\Model\Table\ClienteTable->validationDefault(Object(Cake\Validation\Validator))
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(145): Cake\ORM\Table->createValidator('default')
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(471): Cake\ORM\Table->getValidator('default')
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(414): Cake\View\Form\EntityContext->_getValidator(Array)
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1386): Cake\View\Form\EntityContext->isRequired('cedula')
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1285): Cake\View\Helper\FormHelper->_magicOptions('cedula', Array, true)
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1107): Cake\View\Helper\FormHelper->_parseOptions('cedula', Array)
+#10 C:\xampp\htdocs\gmcb\src\Template\Cliente\add.ctp(17): Cake\View\Helper\FormHelper->control('cedula')
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1196): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(1157): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\View\View.php(765): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(624): Cake\View\View->render(NULL, NULL)
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#30 {main}
+
+
+2017-09-25 17:09:07 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "telefono"
+Request URL: /cliente/add
+Referer URL: http://localhost:7070/gmcb/cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(1889): Cake\Validation\ValidationRule->process('wsdfe', Array, Array)
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(145): Cake\Validation\Validator->_processRules('telefono', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(254): Cake\Validation\Validator->errors(Array, true)
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(555): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(2506): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Cliente), Array, Array)
+#5 C:\xampp\htdocs\gmcb\src\Controller\ClienteController.php(58): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Cliente), Array)
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClienteController->add()
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2017-09-25 17:10:15 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "telefono"
+Request URL: /cliente/add
+Referer URL: http://localhost:7070/gmcb/cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(1889): Cake\Validation\ValidationRule->process('df', Array, Array)
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(145): Cake\Validation\Validator->_processRules('telefono', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(254): Cake\Validation\Validator->errors(Array, true)
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(555): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(2506): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Cliente), Array, Array)
+#5 C:\xampp\htdocs\gmcb\src\Controller\ClienteController.php(58): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Cliente), Array)
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClienteController->add()
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2017-09-25 17:20:30 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "telefono"
+Request URL: /cliente/add
+Referer URL: http://localhost:7070/gmcb/cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(1889): Cake\Validation\ValidationRule->process('drf', Array, Array)
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(145): Cake\Validation\Validator->_processRules('telefono', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(254): Cake\Validation\Validator->errors(Array, true)
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(555): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(2506): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Cliente), Array, Array)
+#5 C:\xampp\htdocs\gmcb\src\Controller\ClienteController.php(58): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Cliente), Array)
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClienteController->add()
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2017-09-25 17:21:24 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "telefono"
+Request URL: /cliente/add
+Referer URL: http://localhost:7070/gmcb/cliente/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(1889): Cake\Validation\ValidationRule->process('wf', Array, Array)
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Validation\Validator.php(145): Cake\Validation\Validator->_processRules('telefono', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(254): Cake\Validation\Validator->errors(Array, true)
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Marshaller.php(555): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(2506): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Cliente), Array, Array)
+#5 C:\xampp\htdocs\gmcb\src\Controller\ClienteController.php(58): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Cliente), Array)
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\ClienteController->add()
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClienteController))
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2017-09-25 17:31:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`baseciclo`.`bicicleta`, CONSTRAINT `fk_Bicicleta_Cliente1` FOREIGN KEY (`Cliente_cedula`) REFERENCES `cliente` (`cedula`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /bicicleta/add
+Referer URL: http://localhost:7070/gmcb/bicicleta/add
+Stack Trace:
+#0 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Connection.php(314): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1923): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1817): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1730): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1453): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Database\Connection.php(681): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1454): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\ORM\Table.php(1731): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\xampp\htdocs\gmcb\src\Controller\BicicletaController.php(59): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#13 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BicicletaController->add()
+#14 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BicicletaController))
+#16 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\gmcb\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\gmcb\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\gmcb\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+

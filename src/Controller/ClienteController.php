@@ -57,11 +57,17 @@ class ClienteController extends AppController
         if ($this->request->is('post')) {
             $cliente = $this->Cliente->patchEntity($cliente, $this->request->getData());
             if ($this->Cliente->save($cliente)) {
-                $this->Flash->success(__('The cliente has been saved.'));
+                $this->Flash->success(__('El cliente se guardo correctamente.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The cliente could not be saved. Please, try again.'));
+            else{
+                if(sizeof($cliente)>0)
+                    $this->Flash->error(__('Este numero de cedula ya existe.'));
+                else{
+                    $this->Flash->error(__('El cliente no pudo ser guardado. Intente de nuevo.'));
+                    }
+            }
         }
         $this->set(compact('cliente'));
         $this->set('_serialize', ['cliente']);
