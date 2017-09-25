@@ -50,7 +50,7 @@ class AppController extends Controller
                 'authenticate'=>[
                     'Form'=>[
                         'fiels'=>[
-                            'email'=>'email',
+                            'username'=>'cedula',
                             'password'=>'password'
                         ]
                     ]
