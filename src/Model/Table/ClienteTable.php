@@ -60,9 +60,9 @@ class ClienteTable extends Table
             ->notEmpty('apellidos');
 
         $validator
-            ->integer('telefono')
-            ->allowEmpty('telefono', 'create')
-             ->add('telefono', 'RulesChecker',['message' => 'Se permiten solo números']);
+            ->scalar('telefono')
+            ->allowEmpty('telefono', 'create');
+             //->add('telefono', 'rule',['message' => 'Se permiten solo números']);
             //->notEmpty('telefono');
             //->message('hola');
 

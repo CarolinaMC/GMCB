@@ -5,7 +5,7 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Opciones Cliente') ?></li>
+        <li class="heading"><?= __('Opciones bicicleta') ?></li>
         <li><?= $this->Form->postLink(
                 __('Borrar'),
                 ['action' => 'delete', $bicicletum->serial],
