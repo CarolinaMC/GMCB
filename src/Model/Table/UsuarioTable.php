@@ -70,8 +70,7 @@ class UsuarioTable extends Table
 
         $validator
             ->scalar('username')
-            ->requirePresence('username', 'create')
-            ->notEmpty('username');
+            ->allowEmpty('username', 'create');
 
         $validator
             ->scalar('password')

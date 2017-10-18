@@ -50,10 +50,6 @@
             <td><?= h($usuario->email) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Username') ?></th>
-            <td><?= h($usuario->username) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Password') ?></th>
             <td><?= h($usuario->password) ?></td>
         </tr>
