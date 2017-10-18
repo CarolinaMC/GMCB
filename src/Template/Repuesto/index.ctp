@@ -5,8 +5,8 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Repuesto'), ['action' => 'add']) ?></li>
+        <li class="heading"><?= __('Opciones de repuesto') ?></li>
+        <li><?= $this->Html->link(__('Nuevo Repuesto'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="repuesto index large-9 medium-8 columns content">
@@ -28,14 +28,18 @@
             <tr>
                 <td><?= h($repuesto->codigo) ?></td>
                 <td><?= h($repuesto->descripcion) ?></td>
-                <td><?= $this->Number->format($repuesto->precio) ?></td>
+                <td>₡<?= $this->Number->format($repuesto->precio) ?></td>
                 <td><?= h($repuesto->marca) ?></td>
                 <td><?= h($repuesto->categoria) ?></td>
-                <td><?= h($repuesto->disponible) ?></td>
+                <td><?php if($repuesto->disponible){
+                        ?>Sí<?php
+                    }else{
+                        ?>No<?php
+                    }?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $repuesto->codigo]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $repuesto->codigo]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $repuesto->codigo], ['confirm' => __('Are you sure you want to delete # {0}?', $repuesto->codigo)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $repuesto->codigo]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $repuesto->codigo]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $repuesto->codigo], ['confirm' => __('Are you sure you want to delete # {0}?', $repuesto->codigo)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
