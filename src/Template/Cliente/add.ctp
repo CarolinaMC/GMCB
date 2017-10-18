@@ -28,6 +28,18 @@ function valida(e){
     <?= $this->Form->create($cliente) ?>
     <fieldset>
         <legend><?= __('Agregar Cliente') ?></legend>
+        <form> 
+        <tr>
+            <td>
+                <b>Nacionalidad:</b>
+            </td>
+            <td>
+                <input type="radio" name="Nacionalidad" value="1"> Nacional
+                <input type="radio" name="Nacionalidad" value="2"> Extranjero
+            </td>
+        </tr>
+        </form>
+        
         <?php
 
             echo $this->Form->control('cedula',array('type'=>'text','minlength'=>'9','maxlength'=>'9', 'onkeypress'=>'return valida(event)')); 

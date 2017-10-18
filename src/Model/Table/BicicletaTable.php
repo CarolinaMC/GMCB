@@ -34,6 +34,7 @@ class BicicletaTable extends Table
         $this->setDisplayField('serial');
         $this->setPrimaryKey(['serial']);
         $this->belongsTo('Cliente',['foreingKey'=>'Cliente_cedula','joinType'=>'INNER']);
+        $this->belongsTo('Marca',['foreingKey'=>'marca','joinType'=>'INNER']);
     }
 
     /**
