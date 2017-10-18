@@ -38,7 +38,7 @@ function valida(e){
             echo $this->Form->control('nombre');
             echo $this->Form->control('apellidos');
             echo $this->Form->control('telefono',array('type'=>'text','minlength'=>'8','maxlength'=>'8', 'onkeypress'=>'return valida(event)'));
-            echo $this->Form->control('direccion',array('type'=>'email'));
+            echo $this->Form->control('direccion');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Agregar')) ?>
