@@ -69,10 +69,6 @@ class UsuarioTable extends Table
             ->notEmpty('email');
 
         $validator
-            ->scalar('username')
-            ->allowEmpty('username', 'create');
-
-        $validator
             ->scalar('password')
             ->requirePresence('password', 'create')
             ->notEmpty('password');
