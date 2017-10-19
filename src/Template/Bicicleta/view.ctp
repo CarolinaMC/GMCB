@@ -4,6 +4,38 @@
  * @var \App\Model\Entity\Bicicletum $bicicletum
  */
 ?>
+
+<?php function tamaño($tam){
+    if($tam==0){
+        return '"12';
+    }
+    elseif ($tam==1) {
+        return '"16';
+    }
+    elseif ($tam==2){ 
+        return '"20';
+    }
+    elseif($tam==3){
+        return '"24';
+    }
+    elseif($tam==4){
+        return '"26';
+    }
+    elseif ($tam==4) {
+        return '"27.5';
+    }
+    elseif ($tam==5) {
+        return '"28';
+    }
+    elseif ($tam==6) {
+        return '"29';
+    }
+    else{
+        return '"700';
+    }
+}
+?>
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Opciones Bicicleta') ?></li>
@@ -26,7 +58,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Tamaño') ?></th>
-            <td><?= h($bicicletum->tamaño) ?></td>
+            <td><?= h(tamaño($bicicletum->tamaño)) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Cliente Cedula') ?></th>

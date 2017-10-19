@@ -14,8 +14,20 @@
     <fieldset>
         <legend><?= __('Agregar Mantenimiento') ?></legend>
         <?php
-            echo $this->Form->control('prioridad');
-            echo $this->Form->control('estado');
+            echo $this->Form->control('prioridad',array('options'=>array(
+                    'Urgente'=>'Urgente',
+                    'Alta'=>'Alta',
+                    'Media'=>'Media',
+                    'Baja'=>'Baja'
+                )));
+            echo $this->Form->control('estado',array('options'=>array(
+                    'Entregada'=>'Entregada',
+                    'Finalizado'=>'Finalizado',
+                    'Reparando'=>'Reparando',
+                    'En espera'=>'En espera',
+                    'En espera por Piezas'=>'En espera por Piezas'
+
+                )));
             echo $this->Form->control('Bicicleta_serial1', array('type'=>'select', 'options'=>$Bicicleta_serial1));
             echo $this->Form->control('Boleta_serial', array('type'=>'select', 'options'=>$Boleta_serial));
         ?>

@@ -24,12 +24,12 @@
         <tbody>
             <?php foreach ($marca as $marca): ?>
             <tr>
-                <td><?= $this->Number->format($marca->idMarca) ?></td>
+                <td><?= $this->Number->format($marca->Marca) ?></td>
                 <td><?= h($marca->Marca) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $marca->idMarca]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $marca->idMarca]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $marca->idMarca], ['confirm' => __('Are you sure you want to delete # {0}?', $marca->idMarca)]) ?>
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $marca->Marca]) ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $marca->Marca]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $marca->Marca], ['confirm' => __('Are you sure you want to delete # {0}?', $marca->Marca)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

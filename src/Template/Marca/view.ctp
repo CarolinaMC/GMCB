@@ -6,8 +6,8 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Marca'), ['action' => 'edit', $marca->idMarca]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Marca'), ['action' => 'delete', $marca->idMarca], ['confirm' => __('Are you sure you want to delete # {0}?', $marca->idMarca)]) ?> </li>
+        <li><?= $this->Html->link(__('Edit Marca'), ['action' => 'edit', $marca->Marca]) ?> </li>
+        <li><?= $this->Form->postLink(__('Delete Marca'), ['action' => 'delete', $marca->Marca], ['confirm' => __('Are you sure you want to delete # {0}?', $marca->Marca)]) ?> </li>
         <li><?= $this->Html->link(__('List Marca'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Marca'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Bicicleta'), ['controller' => 'Bicicleta', 'action' => 'index']) ?> </li>
@@ -21,10 +21,7 @@
             <th scope="row"><?= __('Marca') ?></th>
             <td><?= h($marca->Marca) ?></td>
         </tr>
-        <tr>
-            <th scope="row"><?= __('IdMarca') ?></th>
-            <td><?= $this->Number->format($marca->idMarca) ?></td>
-        </tr>
+        
     </table>
     <div class="related">
         <h4><?= __('Related Bicicleta') ?></h4>
