@@ -13,7 +13,7 @@
     </ul>
 </nav>
 <div class="boleta view large-9 medium-8 columns content">
-    <h3><?= h($boletum->serial) ?></h3>
+    <h3><?= __('Boleta # '),h($boletum->serial) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Garantia') ?></th>
@@ -31,10 +31,7 @@
             <th scope="row"><?= __('Cliente Cedula') ?></th>
             <td><?= h($boletum->Cliente_cedula) ?></td>
         </tr>
-        <tr>
-            <th scope="row"><?= __('Serial') ?></th>
-            <td><?= $this->Number->format($boletum->serial) ?></td>
-        </tr>
+        
         <tr>
             <th scope="row"><?= __('Fecha') ?></th>
             <td><?= h($boletum->fecha) ?></td>

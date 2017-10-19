@@ -20,12 +20,19 @@
     <fieldset>
         <legend><?= __('Editar Mantenimiento') ?></legend>
         <?php
-            echo $this->Form->control('prioridad');
-            echo $this->Form->control('estado');
-            echo $this->Form->control('Bicicleta_serial1');
-            echo $this->Form->control('Boleta_serial');
+            //echo $this->Form->control('prioridad');
+            echo $this->Form->control('estado',array('options'=>array(
+                    'Entregada'=>'Entregada',
+                    'Finalizado'=>'Finalizado',
+                    'Reparando'=>'Reparando',
+                    'En espera'=>'En espera',
+                    'En espera por Piezas'=>'En espera por Piezas'
+
+                )));
+            //echo $this->Form->control('Bicicleta_serial1');
+            //echo $this->Form->control('Boleta_serial');
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Agregar')) ?>
+    <?= $this->Form->button(__('Editar')) ?>
     <?= $this->Form->end() ?>
 </div>

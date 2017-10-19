@@ -13,7 +13,7 @@
     </ul>
 </nav>
 <div class="mantenimiento view large-9 medium-8 columns content">
-    <h3><?= h($mantenimiento->serial) ?></h3>
+    <h3><?=  __('Mantenimiento #'), h($mantenimiento->serial) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Prioridad') ?></th>
@@ -24,20 +24,12 @@
             <td><?= h($mantenimiento->estado) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Serial') ?></th>
-            <td><?= $this->Number->format($mantenimiento->serial) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Bicicleta Serial1') ?></th>
+            <th scope="row"><?= __('Bicicleta #') ?></th>
             <td><?= $this->Number->format($mantenimiento->Bicicleta_serial1) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Boleta Serial') ?></th>
+            <th scope="row"><?= __('Boleta #') ?></th>
             <td><?= $this->Number->format($mantenimiento->Boleta_serial) ?></td>
         </tr>
-         <tr>
-            <th scope="row"><?= __('Serial') ?></th>
-            <td><?= $this->Number->format($mantenimiento->serial) ?></td>
-        </tr>
-    </table>
+        </table>
 </div>
