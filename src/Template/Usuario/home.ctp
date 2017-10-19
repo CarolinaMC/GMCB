@@ -28,7 +28,7 @@
 </div>
 
 <div class="contenedor" id="cuatro">
-<h1><?= $this->Html->link("Inventario de repuestos",['controller'=>'Repuesto', 'action'=>'index'])?></h1>
+<h1><?= $this->Html->link("Control de repuestos",['controller'=>'Repuesto', 'action'=>'index'])?></h1>
 </div>
 
 <div class="contenedor" id="cinco">
