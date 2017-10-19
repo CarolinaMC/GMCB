@@ -48,7 +48,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
             </li>
             <li class="logo">
-            <div id= "log" align="center"><?= $this->Html->image('logo3.png')?></div> 
+            <div id= "logo" align="center"><?= $this->Html->image('logo3.png')?></div> 
             </li>
         </ul>
         <div class="top-bar-section">
