@@ -8,8 +8,8 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $marca->idMarca],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $marca->idMarca)]
+                ['action' => 'delete', $marca->Marca],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $marca->Marca)]
             )
         ?></li>
         <li><?= $this->Html->link(__('List Marca'), ['action' => 'index']) ?></li>

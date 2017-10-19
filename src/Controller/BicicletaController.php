@@ -64,9 +64,9 @@ class BicicletaController extends AppController
             $this->Flash->error(__('No se guardó la Bicicleta. Intente nuevamente'));
         }
         $cliente_cedula = $this->Bicicleta->Cliente->find('list',array('fields'=>array('Cliente.cedula')));
-        $marca = $this->Bicicleta->Marca->find('list',array('fields'=>array('Marca.idMarca','Marca.Marca')));
-        $this->set(compact('cliente_cedula'));
+        $marca = $this->Bicicleta->Marca->find('list',array('fields'=>array('Marca.Marca')));
          $this->set(compact('marca'));
+        $this->set(compact('cliente_cedula'));
         $this->set(compact('bicicletum'));
         $this->set('_serialize', ['bicicletum']);
     }

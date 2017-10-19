@@ -22,7 +22,8 @@
         <?php
             echo $this->Form->control('marca');
             echo $this->Form->control('descripcion');
-            echo $this->Form->control('tamaño');
+            $tamaño =  array('12','16','19','24','26','27.5','28','29','700');
+            echo $this->form->input('tamaño', array('type'=>'select','options'=>$tamaño));
         ?>
     </fieldset>
     <?= $this->Form->button(__('Editar')) ?>

@@ -30,8 +30,6 @@ use Cake\Validation\Validator;
         parent::initialize($config);
 
         $this->setTable('marca');
-        $this->setDisplayField('idMarca');
-        $this->setPrimaryKey('idMarca');
         $this->hasMany('Bicicleta',['foreingKey'=>'serial']);
 
     }
@@ -44,8 +42,6 @@ use Cake\Validation\Validator;
      */
     public function validationDefault(Validator $validator)
     {
-        $validator
-            ->integer('idMarca')->allowEmpty('idMarca', 'create');
         $validator
             ->scalar('Marca')->requirePresence('Marca', 'create')->notEmpty('Marca');
         return $validator;

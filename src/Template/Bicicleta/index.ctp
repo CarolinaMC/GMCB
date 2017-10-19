@@ -4,6 +4,38 @@
  * @var \App\Model\Entity\Bicicletum[]|\Cake\Collection\CollectionInterface $bicicleta
  */
 ?>
+
+<?php function tamaño($tam){
+    if($tam==0){
+        return '"12';
+    }
+    elseif ($tam==1) {
+        return '"16';
+    }
+    elseif ($tam==2){ 
+        return '"20';
+    }
+    elseif($tam==3){
+        return '"24';
+    }
+    elseif($tam==4){
+        return '"26';
+    }
+    elseif ($tam==4) {
+        return '"27.5';
+    }
+    elseif ($tam==5) {
+        return '"28';
+    }
+    elseif ($tam==6) {
+        return '"29';
+    }
+    else{
+        return '"700';
+    }
+}
+?>
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Opciones Bicicleta') ?></li>
@@ -30,7 +62,7 @@
                 <td><?= $this->Number->format($bicicletum->serial) ?></td>
                 <td><?= h($bicicletum->marca) ?></td>
                 <td><?= h($bicicletum->descripcion) ?></td>
-                <td><?= h($bicicletum->tamaño) ?></td>
+                <td><?= h(tamaño($bicicletum->tamaño)) ?></td>
                 <td><?= h($bicicletum->Cliente_cedula) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $bicicletum->serial]) ?>
