@@ -19,7 +19,7 @@
                 <th scope="col"><?= $this->Paginator->sort('nombre') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('apellidos') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('telefono') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('direccion') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('Direccion física') ?></th>
                 <th scope="col" class="actions"><?= __('Opciones') ?></th>
             </tr>
         </thead>

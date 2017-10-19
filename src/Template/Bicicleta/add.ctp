@@ -17,7 +17,7 @@
             echo $this->Form->control('marca',array('type'=>'select','options'=>$marca));
             echo $this->Form->control('descripcion');
             $tamaño =  array('12','16','19','24','26','27.5','28','29','700');
-            echo $this->form->input('tamaño', array('type'=>'select','options'=>$tamaño));
+            echo $this->form->control('tamaño', array('type'=>'select','options'=>$tamaño));
             echo $this->Form->control('Cliente_cedula',array('type'=>'select','options'=>$cliente_cedula));
             
         ?>

@@ -16,8 +16,8 @@
         <?php
             echo $this->Form->control('prioridad');
             echo $this->Form->control('estado');
-            echo $this->Form->control('Bicicleta', array('type'=>'select', 'options'=>$Bicicleta_serial1));
-            echo $this->Form->control('Boleta', array('type'=>'select', 'options'=>$Boleta_serial));
+            echo $this->Form->control('Bicicleta_serial1', array('type'=>'select', 'options'=>$Bicicleta_serial1));
+            echo $this->Form->control('Boleta_serial', array('type'=>'select', 'options'=>$Boleta_serial));
         ?>
     </fieldset>
     <?= $this->Form->button(__('Agregar')) ?>

@@ -33,7 +33,7 @@
             <td><?= h($cliente->telefono) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Direccion') ?></th>
+            <th scope="row"><?= __('Direccion física') ?></th>
             <td><?= h($cliente->direccion) ?></td>
         </tr>
     </table>

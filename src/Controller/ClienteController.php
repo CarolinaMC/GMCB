@@ -63,7 +63,7 @@ class ClienteController extends AppController
             }
             else{
                 if(sizeof($cliente)>0)
-                    $this->Flash->error(__('Este numero de cedula ya existe.'));
+                    $this->Flash->error(__('El cliente se guardó correctamente.'));
                 else{
                     $this->Flash->error(__('El cliente no pudo ser guardado. Intente de nuevo.'));
                     }

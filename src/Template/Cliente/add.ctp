@@ -45,7 +45,7 @@ function validaL(e){
             echo $this->Form->control('nombre',array('type'=>'text', 'onkeypress'=>'return validaL(event)'));
             echo $this->Form->control('apellidos',array('type'=>'text', 'onkeypress'=>'return validaL(event)'));
             echo $this->Form->control('telefono',array('type'=>'text','minlength'=>'8','maxlength'=>'8', 'onkeypress'=>'return validaN(event)'));
-            echo $this->Form->control('direccion');
+            echo $this->Form->control('direccion',array('placeholder'=>"Ingrese una dirección física"));
         ?>
     </fieldset>
     <?= $this->Form->button(__('Agregar')) ?>
