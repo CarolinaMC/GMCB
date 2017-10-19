@@ -44,7 +44,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1 align="center"><b href=""><?= $this->Html->link("CicloBarva",['controller'=>'Usuario', 'action'=>'home']) ?></b></h1>
+                <h1 align="left"><b href=""><?= $this->Html->link("CicloBarva",['controller'=>'Usuario', 'action'=>'home']) ?></b></h1>
 
             </li>
             <li class="logo">
