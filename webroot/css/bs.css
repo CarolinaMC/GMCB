@@ -426,6 +426,13 @@ th {
     padding: 0;
 }
 
+#logo {
+    max-width: 50%;
+    height: 40px;
+    width: 40px;
+    size:20px;
+}
+
 /**
  * Foundation for Sites by ZURB
  * Version 5
