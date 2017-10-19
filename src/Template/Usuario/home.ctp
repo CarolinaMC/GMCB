@@ -39,4 +39,8 @@
 <h1><?= $this->Html->link("Menú de Boleta",['controller'=>'Boleta', 'action'=>'index'])?></h1>
 </div>
 
+<div class="contenedor" id="siete">
+<h1><?= $this->Html->link("Menú de mantenimiento",['controller'=>'Mantenimiento', 'action'=>'index'])?></h1>
+</div>
+
 <br><br>

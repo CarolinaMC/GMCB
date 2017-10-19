@@ -5,7 +5,7 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Acciones Mantenimiento') ?></li>
+        <li class="heading"><?= __('Opciones Mantenimiento') ?></li>
         <li><?= $this->Html->link(__('Lista Mantenimiento'), ['action' => 'index']) ?></li>
     </ul>
 </nav>

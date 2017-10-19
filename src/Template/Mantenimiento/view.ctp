@@ -35,5 +35,9 @@
             <th scope="row"><?= __('Boleta Serial') ?></th>
             <td><?= $this->Number->format($mantenimiento->Boleta_serial) ?></td>
         </tr>
+         <tr>
+            <th scope="row"><?= __('Serial') ?></th>
+            <td><?= $this->Number->format($mantenimiento->serial) ?></td>
+        </tr>
     </table>
 </div>

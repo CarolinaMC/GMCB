@@ -17,6 +17,7 @@ class BoletaController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+    var $paginate = array('limit' =>5,'order'=> array('serial'));
     public function index()
     {
         $boleta = $this->paginate($this->Boleta);

@@ -66,6 +66,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <?= $this->Html->link("Control de repuesto", ['controller'=>'Repuesto', 'action'=>'index'])?>
                 </li>
                 <li>
+                    <?= $this->Html->link("Boleta", ['controller'=>'Boleta', 'action'=>'index'])?>
+                </li>
+
+                <li>
+                    <?= $this->Html->link("Mantenimiento", ['controller'=>'Mantenimiento', 'action'=>'index'])?>
+                </li>
+
+                <li>
                     <?= $this->Html->link('Salir',['controller'=>'Usuario', 'action'=> 'logout', 'hidden'=> true])?>
                 </li>
             </ul>

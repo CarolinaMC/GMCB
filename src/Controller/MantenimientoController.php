@@ -17,6 +17,7 @@ class MantenimientoController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+    var $paginate = array('limit' =>5,'order'=> array('prioridad'));
     public function index()
     {
         $mantenimiento = $this->paginate($this->Mantenimiento);
