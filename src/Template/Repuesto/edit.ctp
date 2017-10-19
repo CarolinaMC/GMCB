@@ -20,11 +20,7 @@
     <fieldset>
         <legend><?= __('Editar Bicicleta') ?></legend>
         <?php
-            echo $this->Form->control('codigo',array('type'=>'text','disabled'));
-            echo $this->Form->control('descripcion',array('type'=>'text','disabled'));
             echo $this->Form->control('precio');
-            echo $this->Form->control('marca',array('type'=>'text','disabled'));
-            echo $this->Form->control('categoria',array('type'=>'text','disabled'));
             echo $this->Form->control('disponible',array('type'=>'checkbox'));
         ?>
     </fieldset>
