@@ -8,7 +8,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Opciones Bicicleta') ?></li>
         <li><?= $this->Html->link(__('Editar Bicicleta'), ['action' => 'edit', $bicicletum->serial]) ?> </li>
-        <li><?= $this->Form->postLink(__('Borrar Bicicleta'), ['action' => 'delete', $bicicletum->serial], ['confirm' => __('Are you sure you want to delete # {0}?', $bicicletum->serial)]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar Bicicleta'), ['action' => 'delete', $bicicletum->serial], ['confirm' => __('Esta seguro de eliminar esta bicicleta? # {0}?', $bicicletum->serial)]) ?> </li>
         <li><?= $this->Html->link(__('Lista Bicicleta'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Nueva Bicicleta'), ['action' => 'add']) ?> </li>
     </ul>

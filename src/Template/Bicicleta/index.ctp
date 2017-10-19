@@ -8,6 +8,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Opciones Bicicleta') ?></li>
         <li><?= $this->Html->link(__('Nueva Bicicleta'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link("Agregar nueva marca", ['controller'=>'Marca', 'action'=>'index'])?></li>
     </ul>
 </nav>
 <div class="bicicleta index large-9 medium-8 columns content">

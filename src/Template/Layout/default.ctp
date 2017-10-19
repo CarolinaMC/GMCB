@@ -21,8 +21,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        CicloBarva
+        CicloBarva  
     </title>
+    <div class="col-sm-12">
+    <div class="col-sm-4" align="center"><?= $this->Html->image('ciclo.jpg')?></div>
+    </div>
+
+
+
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('bs.css') ?>
@@ -45,14 +51,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <?= $this->Html->link("Usuario",['controller'=>'Usuario', 'action'=>'index'])?>
                 </li>
                 <li>
+                    <?= $this->Html->link("Cliente", ['controller'=>'Cliente', 'action'=>'index'])?>
+                </li>
+                <li>
                     <?= $this->Html->link("Bicicleta", ['controller'=>'Bicicleta', 'action'=>'index'])?>
                 </li>
                 <li>
-                    <?= $this->Html->link("Cliente", ['controller'=>'Cliente', 'action'=>'index'])?>
+                    <?= $this->Html->link("Inventario de repuesto", ['controller'=>'Repuesto', 'action'=>'index'])?>
                 </li>
-                
                 <li>
-                    <?= $this->Html->link('Salir',['controller'=>'Usuario', 'action'=> 'logout'])?>
+                    <?= $this->Html->link('Salir',['controller'=>'Usuario', 'action'=> 'logout', 'hidden'=> true])?>
                 </li>
             </ul>
         </div>

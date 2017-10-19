@@ -39,7 +39,7 @@ function valida(e){
             </td>
         </tr>
         </form>
-        
+
         <?php
 
             echo $this->Form->control('cedula',array('type'=>'text','minlength'=>'9','maxlength'=>'9', 'onkeypress'=>'return valida(event)')); 
