@@ -50,7 +50,7 @@ use Cake\Validation\Validator;
         $validator
             ->date('fecha')            ->requirePresence('fecha', 'create')            ->notEmpty('fecha');
         $validator
-            ->scalar('garantia')            ->requirePresence('garantia', 'create')            ->notEmpty('garantia');
+            ->scalar('garantia')            ->allowEmpty('garantia');
         $validator
             ->scalar('Usuario_cedula')            ->requirePresence('Usuario_cedula', 'create')            ->notEmpty('Usuario_cedula');
         $validator

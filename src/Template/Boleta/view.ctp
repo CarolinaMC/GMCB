@@ -17,7 +17,11 @@
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Garantia') ?></th>
-            <td><?= h($boletum->garantia) ?></td>
+            <td><?php if($boletum->garantia){
+                        ?>Sí<?php
+                    }else{
+                        ?>No<?php
+                    }?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Usuario Cedula') ?></th>

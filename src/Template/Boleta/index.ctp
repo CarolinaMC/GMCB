@@ -27,7 +27,11 @@
             <tr>
                 <td><?= $this->Number->format($boletum->serial) ?></td>
                 <td><?= h($boletum->fecha) ?></td>
-                <td><?= h($boletum->garantia) ?></td>
+                <td><?php if($boletum->garantia){
+                        ?>Sí<?php
+                    }else{
+                        ?>No<?php
+                    }?></td>
                 <td><?= h($boletum->Usuario_cedula) ?></td>
                 <td><?= h($boletum->Cliente_cedula) ?></td>
                 <td class="actions">
