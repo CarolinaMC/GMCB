@@ -4,7 +4,7 @@
  */
 ?>
 <script>
-function valida(e){
+function validaN(e){
     tecla = (document.all) ? e.keyCode : e.which;
 
     //Tecla de retroceso para borrar, siempre la permite
@@ -16,6 +16,17 @@ function valida(e){
     patron =/[0-9]/;
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
+}
+function validaL(e){
+    tecla = (document.all) ? e.keyCode : e.which;
+
+    //Tecla de retroceso para borrar, siempre la permite
+    if (tecla==8) return true;
+        
+    // Patron de entrada, en este caso solo acepta letras
+    patron =/[A-Za-zñÑáÁéÉíÍóÓúÚÜü ]/;
+    te = String.fromCharCode(tecla);
+    return patron.test(te);
 }
 </script>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
