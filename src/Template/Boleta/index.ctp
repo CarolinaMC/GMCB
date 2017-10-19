@@ -5,8 +5,8 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Boletum'), ['action' => 'add']) ?></li>
+        <li class="heading"><?= __('Acciones Boleta') ?></li>
+        <li><?= $this->Html->link(__('Nueva Boleta'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="boleta index large-9 medium-8 columns content">
@@ -31,9 +31,9 @@
                 <td><?= h($boletum->Usuario_cedula) ?></td>
                 <td><?= h($boletum->Cliente_cedula) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $boletum->serial]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $boletum->serial]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $boletum->serial], ['confirm' => __('Are you sure you want to delete # {0}?', $boletum->serial)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $boletum->serial]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $boletum->serial]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $boletum->serial], ['confirm' => __('Está seguro de borrar la boleta # {0}?', $boletum->serial)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -41,12 +41,12 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->first('<< ' . __('Primero')) ?>
+            <?= $this->Paginator->prev('< ' . __('Previo')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
+            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
+            <?= $this->Paginator->last(__('Ultimo') . ' >>') ?>
         </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+        <p><?= $this->Paginator->counter(['format' => __('Pagina {{page}} de {{pages}}, mostrando {{current}} record(s) de {{count}} total')]) ?></p>
     </div>
 </div>

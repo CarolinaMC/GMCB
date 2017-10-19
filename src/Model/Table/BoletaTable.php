@@ -34,7 +34,7 @@ use Cake\Validation\Validator;
         $this->setPrimaryKey('serial');
         $this->belongsTo('Usuario',['foreingKey'=>'Usuario_cedula','joinType'=>'INNER']);
         $this->belongsTo('Cliente',['foreingKey'=>'Cliente_cedula','joinType'=>'INNER']);
-        $this->belongsTo('Bicicleta',['foreingKey'=>'Bicicleta_serial', 'joinType'=>'INNER']);
+        $this->hasMany('Mantenimiento', ['foreingKey'=>'serial']);
     }
 
     /**

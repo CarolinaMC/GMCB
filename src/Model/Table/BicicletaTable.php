@@ -35,6 +35,7 @@ class BicicletaTable extends Table
         $this->setPrimaryKey(['serial']);
         $this->belongsTo('Cliente',['foreingKey'=>'Cliente_cedula','joinType'=>'INNER']);
         $this->belongsTo('Marca',['foreingKey'=>'marca','joinType'=>'INNER']);
+        $this->hasMany('Mantenimiento', ['foreingKey'=>'serial']);
     }
 
     /**

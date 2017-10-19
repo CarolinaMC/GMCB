@@ -5,11 +5,11 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Boletum'), ['action' => 'edit', $boletum->serial]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Boletum'), ['action' => 'delete', $boletum->serial], ['confirm' => __('Are you sure you want to delete # {0}?', $boletum->serial)]) ?> </li>
-        <li><?= $this->Html->link(__('List Boleta'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Boletum'), ['action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Acciones Boleta') ?></li>
+        <li><?= $this->Html->link(__('Editar Boleta'), ['action' => 'edit', $boletum->serial]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar Boleta'), ['action' => 'delete', $boletum->serial], ['confirm' => __(' Está seguro de borrar la Boleta# {0}?', $boletum->serial)]) ?> </li>
+        <li><?= $this->Html->link(__('Lista Boleta'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Nueva Boleta'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="boleta view large-9 medium-8 columns content">
