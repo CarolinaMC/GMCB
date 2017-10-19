@@ -21,10 +21,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        CicloBarva  
+        CicloBarva
+       
     </title>
-    <div class="col-sm-12">
-    <div class="col-sm-4" align="center"><?= $this->Html->image('ciclo.jpg')?></div>
+    
+   
     </div>
 
 
@@ -33,6 +34,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('bs.css') ?>
     <?= $this->Html->css('red.css') ?>
+    <?= $this->Html->css('home.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -42,7 +44,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><a href=""><?= $this->Html->link("CicloBarva",['controller'=>'Usuario', 'action'=>'home']) ?></a></h1>
+                <h1 align="center"><b href=""><?= $this->Html->link("CicloBarva",['controller'=>'Usuario', 'action'=>'home']) ?></b></h1>
+
+            </li>
+            <li class="logo">
+            <div id= "logo" align="center"><?= $this->Html->image('logo3.png')?></div> 
             </li>
         </ul>
         <div class="top-bar-section">

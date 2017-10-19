@@ -33,6 +33,8 @@ class UsuarioTable extends Table
         $this->setTable('usuario');
         $this->setDisplayField('cedula');
         $this->setPrimaryKey('cedula');
+        $this->hasMany('Boleta',['foreingKey'=>'serial']);
+
     }
 
     /**

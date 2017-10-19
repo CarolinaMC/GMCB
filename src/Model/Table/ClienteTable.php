@@ -34,6 +34,7 @@ class ClienteTable extends Table
         $this->setDisplayField('cedula');
         $this->setPrimaryKey('cedula');
         $this->hasMany('Bicicleta',['foreingKey'=>'serial']);
+        $this->hasMany('Boleta',['foreingKey'=>'serial']);
     }
 
     /**
