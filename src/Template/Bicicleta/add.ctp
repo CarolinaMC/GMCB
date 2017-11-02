@@ -14,7 +14,19 @@
     <fieldset>
         <legend><?= __('Agregar Bicicleta') ?></legend>
         <?php
-            echo $this->Form->control('marca',array('type'=>'select','options'=>$marca));
+            $marca= array(
+                ' '=>' ',
+                'Canyon'=>'Canyon', 
+                'BH'=>'BH',
+                'Specialized'=> 'Specialized',
+                'Radon'=>'Radon',
+                'Stivens'=>'Stevens',
+                'Scott'=>'Scott',
+                'Santa Cruz'=>'Santa Cruz',
+                'Conor'=>'Conor',
+                'Otro'=>'Otro'
+                );
+            echo $this->Form->control('marca',array('type'=>'select', 'options'=>$marca));
             echo $this->Form->control('descripcion');
             $tamaño =  array('12','16','19','24','26','27.5','28','29','700');
             echo $this->form->control('tamaño', array('type'=>'select','options'=>$tamaño));

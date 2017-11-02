@@ -34,7 +34,7 @@ class BicicletaTable extends Table
         $this->setDisplayField('serial');
         $this->setPrimaryKey(['serial']);
         $this->belongsTo('Cliente',['foreingKey'=>'Cliente_cedula','joinType'=>'INNER']);
-        $this->belongsTo('Marca',['foreingKey'=>'marca','joinType'=>'INNER']);
+       // $this->belongsTo('Marca',['foreingKey'=>'marca','joinType'=>'INNER']);
         $this->hasMany('Mantenimiento', ['foreingKey'=>'serial']);
     }
 
@@ -55,7 +55,7 @@ class BicicletaTable extends Table
             ->scalar('marca')
             ->requirePresence('marca', 'create')
             ->notEmpty('marca');
-
+       
         $validator
             ->scalar('descripcion')
             ->requirePresence('descripcion', 'create')
