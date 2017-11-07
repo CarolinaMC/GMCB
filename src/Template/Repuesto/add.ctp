@@ -14,11 +14,36 @@
     <fieldset>
         <legend><?= __('Agregar Respuesto') ?></legend>
         <?php
+            $marca= array(
+                'Canyon'=>'Canyon', 
+                'BH'=>'BH',
+                'Specialized'=> 'Specialized',
+                'Radon'=>'Radon',
+                'Stivens'=>'Stevens',
+                'Scott'=>'Scott',
+                'Santa Cruz'=>'Santa Cruz',
+                'Conor'=>'Conor',
+                'Shimanno'=>'Shimanno',
+                'Otro'=>'Otro'
+                );
+
+
+            $categoria= array(
+                'Accesorios'=>'Accesorios',
+                'Aros'=>'Aros',
+                'Asiento'=>'Asiento',
+                'Frenos'=>'Frenos',
+                'Llantas'=>'Llantas',
+                'Manubrio'=>'Manubrio',
+                'Marco'=>'Marco',
+                'Neumaticos'=>'Neumaticos',
+                'Pasador'=>'Pasador',
+                );
             echo $this->Form->control('codigo');
             echo $this->Form->control('descripcion');
             echo $this->Form->control('precio');
-            echo $this->Form->control('marca');
-            echo $this->Form->control('categoria');
+            echo $this->Form->control('marca',array('type'=>'select', 'options'=>$marca));
+            echo $this->Form->control('categoria',array('type'=>'select', 'options'=>$categoria));
             echo $this->Form->control('disponible',array('type'=>'checkbox'));
         ?>
     </fieldset>

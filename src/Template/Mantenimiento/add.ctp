@@ -21,11 +21,11 @@
                     'Baja'=>'Baja'
                 )));
             echo $this->Form->control('estado',array('options'=>array(
-                    'Entregada'=>'Entregada',
-                    'Finalizado'=>'Finalizado',
-                    'Reparando'=>'Reparando',
                     'En espera'=>'En espera',
-                    'En espera por Piezas'=>'En espera por Piezas'
+                    'En espera por piezas'=>'En espera por piezas',
+                    'Reparando'=>'Reparando',
+                    'Finalizado'=>'Finalizado',
+                    'Entregada'=>'Entregada'
 
                 )));
             echo $this->Form->control('Bicicleta_serial1', array('type'=>'select', 'options'=>$Bicicleta_serial1));

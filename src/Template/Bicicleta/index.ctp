@@ -40,7 +40,6 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Opciones Bicicleta') ?></li>
         <li><?= $this->Html->link(__('Nueva Bicicleta'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link("Agregar nueva marca", ['controller'=>'Marca', 'action'=>'index'])?></li>
     </ul>
 </nav>
 <div class="bicicleta index large-9 medium-8 columns content">
@@ -67,7 +66,6 @@
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $bicicletum->serial]) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $bicicletum->serial]) ?>
-                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $bicicletum->serial], ['confirm' => __('Estas seguro que quieres borrar esta bicicleta # {0}?', $bicicletum->serial)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

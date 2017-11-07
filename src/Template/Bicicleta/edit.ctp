@@ -6,12 +6,6 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Opciones bicicleta') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Borrar'),
-                ['action' => 'delete', $bicicletum->serial],
-                ['confirm' => __('Estas seguro que quieres borrar esta bicicleta # {0}?', $bicicletum->serial)]
-            )
-        ?></li>
         <li><?= $this->Html->link(__('Lista Bicicletas'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
