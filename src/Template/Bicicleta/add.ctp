@@ -15,14 +15,15 @@
         <legend><?= __('Agregar Bicicleta') ?></legend>
         <?php
             $marca= array(
-                'Canyon'=>'Canyon', 
-                'BH'=>'BH',
+                'Trek'=>'Trek', 
+                'Orbea'=>'Orbea',
                 'Specialized'=> 'Specialized',
-                'Radon'=>'Radon',
-                'Stivens'=>'Stevens',
+                'Norco'=>'Norco',
+                'Super Pro'=>'Super Pro',
                 'Scott'=>'Scott',
                 'Santa Cruz'=>'Santa Cruz',
-                'Conor'=>'Conor',
+                'Giant'=>'Giant',
+                'Wild'=>'Wild',
                 'Otro'=>'Otro'
                 );
             

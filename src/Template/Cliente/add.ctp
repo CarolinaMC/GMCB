@@ -5,6 +5,7 @@
 ?>
 <script>
 function validaN(e){
+    if(!document.getElementById('extranjero').checked){
     tecla = (document.all) ? e.keyCode : e.which;
 
     //Tecla de retroceso para borrar, siempre la permite
@@ -17,6 +18,9 @@ function validaN(e){
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
 }
+return 0;
+}
+
 function validaL(e){
     tecla = (document.all) ? e.keyCode : e.which;
 
@@ -40,8 +44,10 @@ function validaL(e){
     <fieldset>
         <legend><?= __('Agregar Cliente') ?></legend>
         <?php
-
+            echo $this->Form->control('extranjero',array('type'=>'checkbox','id'=>'extranjero'));
+  
             echo $this->Form->control('cedula',array('type'=>'text','minlength'=>'9','maxlength'=>'9', 'onkeypress'=>'return validaN(event)'));
+            
             echo $this->Form->control('nombre',array('type'=>'text', 'onkeypress'=>'return validaL(event)'));
             echo $this->Form->control('apellidos',array('type'=>'text', 'onkeypress'=>'return validaL(event)'));
             echo $this->Form->control('telefono',array('type'=>'text','minlength'=>'8','maxlength'=>'8', 'onkeypress'=>'return validaN(event)'));
