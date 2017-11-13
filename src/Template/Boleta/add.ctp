@@ -14,7 +14,7 @@
     <fieldset>
         <legend><?= __('Agregar Boleta') ?></legend>
         <?php
-            echo $this->Form->control('fecha');
+            echo $this->Form->control('fecha', array('id'=>'datepicker', 'disabled' => true));
             echo $this->Form->control('garantia',array('type'=>'checkbox'));
             echo $this->Form->control('Usuario_cedula', array('type'=>'select', 'options'=>$Usuario_cedula));
             echo $this->Form->control('Cliente_cedula', array('type'=>'select', 'options'=>$Cliente_cedula));
