@@ -18,12 +18,15 @@
                 'Trek'=>'Trek', 
                 'Orbea'=>'Orbea',
                 'Specialized'=> 'Specialized',
+                'Cannondale'=>'Cannondale',
                 'Norco'=>'Norco',
                 'Super Pro'=>'Super Pro',
                 'Scott'=>'Scott',
                 'Santa Cruz'=>'Santa Cruz',
                 'Giant'=>'Giant',
                 'Wild'=>'Wild',
+                'Merida'=>'Merida',
+                'Fuji'=>'Fuji',
                 'Otro'=>'Otro'
                 );
             
@@ -34,6 +37,7 @@
             echo $this->Form->control('Cliente_cedula',array('type'=>'select','options'=>$cliente_cedula));
             
         ?>
+
     </fieldset>
     <?= $this->Form->button(__('Agregar')) ?>
     <?= $this->Form->end() ?>
